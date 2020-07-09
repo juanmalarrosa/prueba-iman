@@ -50,7 +50,7 @@ const contactUs = (props) => {
                   method="POST"
                   data-netlify="true"
                   action="/"
-                  onSubmit={e=> e.preventDefault()}>
+                  >
 
 
                         <input type="hidden" name="form-name" value="contact-us" />
@@ -64,6 +64,7 @@ const contactUs = (props) => {
                                           <div key={i}>
 
                                                 <textarea
+                                                      name={field.field_name}
                                                       required={field.required === 'required'}
                                                       placeholder={field.field_name}></textarea>
 
@@ -78,6 +79,7 @@ const contactUs = (props) => {
                                           <div key={i}>
 
                                                 <input type={field.type }
+                                                      name={field.field_name}
                                                       required={field.required === 'required'}
                                                       placeholder={field.field_name} />
 

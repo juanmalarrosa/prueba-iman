@@ -45,7 +45,7 @@ module.exports = {
           }
         ]
       },
-      resolve: "gatsby-source-prismic-graphql",
+      resolve: "@prismicio/gatsby-source-prismic-graphql",
     },
   ],
 }
